@@ -258,15 +258,15 @@ Text GLabel 3650 3150 2    60   Input ~ 0
 Dig4
 Text GLabel 8550 5550 0    60   Input ~ 0
 Temp-Data
-Text GLabel 1750 3950 0    60   Input ~ 0
+Text GLabel 950  3950 0    60   Input ~ 0
 Light
-Text GLabel 1750 4050 0    60   Input ~ 0
+Text GLabel 950  4050 0    60   Input ~ 0
 Buttons
-Text GLabel 1750 4250 0    60   Input ~ 0
+Text GLabel 950  4250 0    60   Input ~ 0
 Trig-C
-Text GLabel 1750 4350 0    60   Input ~ 0
+Text GLabel 950  4350 0    60   Input ~ 0
 Trig-B
-Text GLabel 1750 4450 0    60   Input ~ 0
+Text GLabel 950  4450 0    60   Input ~ 0
 Trig-A
 Text GLabel 3650 3050 2    60   Input ~ 0
 Temp-Data
@@ -557,7 +557,7 @@ F 3 "" H 8000 3550 50  0001 C CNN
 	1    8000 3550
 	1    0    0    -1  
 $EndComp
-Text GLabel 1750 4150 0    60   Input ~ 0
+Text GLabel 950  4150 0    60   Input ~ 0
 Trig-D
 $Comp
 L CONN_01X02 J5
@@ -780,4 +780,65 @@ Wire Wire Line
 	7650 4100 6500 4100
 Text Label 7050 4100 0    60   ~ 0
 Out-Gnd
+Wire Wire Line
+	950  3950 1750 3950
+Wire Wire Line
+	1750 4050 950  4050
+Wire Wire Line
+	950  4150 1750 4150
+Wire Wire Line
+	950  4250 1750 4250
+$Comp
+L CONN_01X06 J?
+U 1 1 594A71D7
+P 1450 4900
+F 0 "J?" H 1450 5250 50  0000 C CNN
+F 1 "CONN_01X06" V 1550 4900 50  0000 C CNN
+F 2 "" H 1450 4900 50  0001 C CNN
+F 3 "" H 1450 4900 50  0001 C CNN
+	1    1450 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 4700 1300 4250
+Connection ~ 1300 4250
+Wire Wire Line
+	1200 4700 1200 4150
+Connection ~ 1200 4150
+$Comp
+L GND #PWR?
+U 1 1 594A7567
+P 1800 4650
+F 0 "#PWR?" H 1800 4400 50  0001 C CNN
+F 1 "GND" H 1800 4500 50  0000 C CNN
+F 2 "" H 1800 4650 50  0001 C CNN
+F 3 "" H 1800 4650 50  0001 C CNN
+	1    1800 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 594A75DB
+P 1600 4700
+F 0 "#PWR?" H 1600 4550 50  0001 C CNN
+F 1 "+5V" H 1600 4840 50  0000 C CNN
+F 2 "" H 1600 4700 50  0001 C CNN
+F 3 "" H 1600 4700 50  0001 C CNN
+	1    1600 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 4700 1700 4650
+Wire Wire Line
+	1700 4650 1800 4650
+Wire Wire Line
+	950  4350 1750 4350
+Wire Wire Line
+	1750 4450 950  4450
+Wire Wire Line
+	1500 4700 1500 4350
+Connection ~ 1500 4350
+Wire Wire Line
+	1400 4700 1400 4450
+Connection ~ 1400 4450
 $EndSCHEMATC
