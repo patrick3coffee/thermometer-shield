@@ -1,4 +1,4 @@
-update=Thursday, June 15, 2017 'AMt' 06:46:22 AM
+update=Friday, June 16, 2017 'AMt' 07:07:45 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -61,3 +59,5 @@ LibName29=valves
 LibName30=/Users/patrick/Downloads/Arduino_Shield_Modules_for_KiCad_V3/arduino_shieldsNCL
 LibName31=switches
 LibName32=leds
+[general]
+version=1
