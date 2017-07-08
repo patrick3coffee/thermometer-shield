@@ -2,6 +2,9 @@
 I wanted a display of temperature and humidity and it exploded into this shield that functions as a thermostat, humidistat, and optostat (if that's even a word).
 This project is my first attempt at creating a pcb. The design work is done in KiCAD. 
 
+## Docs
+See the PDF for the full shcematic and the SVGs for the inverted copper etching masks.
+
 ## Logical units of functionality
 1. Display: this 4 digit, 7-segment display is driven by shift registers and transistors.
 2. ULN2804 breakout: a transistor array for controlling 8 resistive or inductive loads.
@@ -18,6 +21,7 @@ This project is my first attempt at creating a pcb. The design work is done in K
     * A4 and A5 in I2C header, but can be used for any purpose.
 
 ## The progression of scope creep  
+There was more to this list that I think I forgot about, but these are the high points.
 * Display temperature and humidity in garage. (done on a breadboard)  
 * Do the same in the chicken coop.
 * Make the hum/temp readings control things at specified thresholds.
